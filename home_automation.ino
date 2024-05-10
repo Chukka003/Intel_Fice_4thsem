@@ -1,6 +1,6 @@
 #include <dht.h>
 
-dht DHT;                // Creates a DHT object
+dht DHT;
 
 char val;
 char val2;
@@ -36,8 +36,8 @@ void loop() {
 
   int readData = DHT.read11(8);
 
-  float t = DHT.temperature;        // Read temperature
-  float h = DHT.humidity;           // Read humidity
+  float t = DHT.temperature;
+  float h = DHT.humidity;
 
   Serial.print("Temperature = ");
   Serial.print(t);
